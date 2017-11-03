@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/hs_bg">
+    <include layout="@layout/a_title_bar" />
+   
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/top_bg"/>-->
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                >
+                <RadioGroup
+                    android:id="@+id/feeGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_xk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/icon_xk"
+                        android:drawablePadding="10dp"
+                        android:text="选课"
+                        android:button="@null"
+                        android:textColor="#ff000000"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_xkqk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/icon_xkqk"
+                        android:drawablePadding="10dp"
+                        android:text="选课情况"
+                        android:button="@null"
+                        android:textColor="#ff000000"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_cjcx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:button="@null"
+                        android:drawableTop="@mipmap/icon_cjcx"
+                        android:drawablePadding="10dp"
+                        android:text="成绩查询"
+                        android:gravity="center"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_xx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@mipmap/icon_kq"
+                        android:drawablePadding="10dp"
+                        android:text="考勤"
+                        android:gravity="center"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:paddingLeft="15dp"
+                android:text="更多应用"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    >
+                    <RadioGroup
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/rb_kcqk"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/icon_jxt"
+                            android:drawablePadding="10dp"
+                            android:text="家校通"
+                            android:button="@null"
+                            android:textColor="#ff000000"
+                            android:gravity="center"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_ktzy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/icon_ktzy"
+                            android:drawablePadding="10dp"
+                            android:text="课堂作业"
+                            android:button="@null"
+                            android:textColor="#ff000000"
+                            android:gravity="center"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_xxxx"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:button="@null"
+                            android:drawableTop="@mipmap/icon_ctj"
+                            android:drawablePadding="10dp"
+                            android:text="错题集"
+                            android:gravity="center"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_xxtz"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="@mipmap/icon_xspj"
+                            android:drawablePadding="10dp"
+                            android:text="学生评教"
+                            android:gravity="center"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/more"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@mipmap/icon_gdqd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="更多期待"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff000000"
+                            android:gravity="center"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff000000"
+                            android:gravity="center"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff000000"
+                            android:gravity="center"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff000000"
+                            android:gravity="center"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        
+    </ScrollView>
+    
+</LinearLayout>

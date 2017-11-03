@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "maitong.com.perfect"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+    maven { // this is for realm-db
+        url 'http://oss.jfrog.org/artifactory/oss-snapshot-local'
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.alibaba:fastjson:1.2.38'
+    compile 'com.amap.api:map2d:latest.integration'
+    compile 'com.amap.api:location:latest.integration'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    /*RecycleView的间隔线*/
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+    //图表库
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+//    compile project(':MPChartLib')
+    compile 'com.google.code.gson:gson:2.8.2'
+    /*图片加载Glide*/
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    /*material风格的dialogs*/
+    compile 'com.afollestad.material-dialogs:core:0.9.3.0'
+    /*权限库*/
+    compile 'com.yanzhenjie:permission:1.0.5'
+    /*SVProgressHUD加载*/
+    compile 'com.kaopiz:kprogresshud:1.0.1'
+    /* 图片浏览器所需 */
+    //    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    /* 版本升级 */
+    //    compile 'com.github.maning0303:MNUpdateAPK:V1.0.3'
+    compile files('libs/butterknife-7.0.1.jar')
+    /*snackbar*/
+    compile 'com.android.support:design:26.+'
+    /*沉浸状态栏*/
+    debugCompile 'com.readystatesoftware.chuck:library:1.0.4'
+    releaseCompile 'com.readystatesoftware.chuck:library-no-op:1.0.4'
+    /*提示库*/
+    compile 'com.bigkoo:svprogresshud:1.0.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    /*倾斜的TextView*/
+    compile 'com.haozhang.libary:android-slanted-textview:1.2'
+    /*联系人布局*/
+    compile 'org.kymjs.kjframe:kjframe:2.4.6.2'
+}

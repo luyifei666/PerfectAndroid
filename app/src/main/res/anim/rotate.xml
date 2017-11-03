@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--抖动-->
+    <!--Y轴不变，从X轴的-1.5来回移动到+1.5-->
+    <!--<translate-->
+        <!--android:fromXDelta="-2"-->
+        <!--android:fromYDelta="0"-->
+        <!--android:toXDelta="0"-->
+        <!--android:toYDelta="2"-->
+        <!--android:duration="300"-->
+        <!--android:repeatCount="infinite"-->
+        <!--android:repeatMode="reverse"/>-->
+    <!--摇动-->
+    <rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="100"
+        android:fromDegrees="-1.0"
+        android:pivotX="50.0%"
+        android:pivotY="50.0%"
+        android:repeatCount="infinite"
+        class="s1"
+        android:repeatMode="reverse"
+        android:toDegrees="1.0" />
+    <!--缩放-->
+    <scale
+        android:duration="1000"
+        android:fillAfter="true"
+        android:fromXScale="0.80"
+        android:fromYScale="0.80"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.80"
+        android:toYScale="0.80" />
+
+</set>

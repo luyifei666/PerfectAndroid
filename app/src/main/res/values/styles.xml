@@ -1,0 +1,307 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Application theme. -->
+
+    <style name="AppTheme" mce_bogus="1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 隐藏标题栏 -->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!-- 窗口透明的状态栏 -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- 窗口透明的导航栏 -->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowAnimationStyle">@style/animation_activity</item>
+    </style>
+    <style name="AppMainTheme" mce_bogus="1" parent="Base.Theme.AppCompat">
+        <item name="android:windowAnimationStyle">@style/animation_main_activity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="SAppTheme" mce_bogus="1" parent="AppTheme">
+        <!--<item name="android:windowBackground">@drawable/bg_start</item>-->
+    </style>
+
+    <style name="animation_activity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_activity_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_activity_stay</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_activity_stay</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_activity_right_out</item>
+    </style>
+
+    <style name="animation_main_activity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_activity_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_activity_stay</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_activity_stay</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_activity_right_out</item>
+    </style>
+
+    <!-- 普通的说明性内容-title -->
+    <style name="text_common_intro_title">
+        <item name="android:textColor">@color/white_1_fafafa</item>
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+    </style>
+    <!-- 子页面Title Bar文字 父类 -->
+    <style name="title_bar_style_parent">
+        <item name="android:textColor">#ffffff</item>
+        <!--
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDy">2</item>
+        -->
+    </style>
+
+    <!-- 子页面Title Bar文字 常规情况下 -->
+    <style name="title_bar_style_nor" parent="title_bar_style_parent">
+        <item name="android:textSize">@dimen/textsize_18sp</item>
+    </style>
+
+    <!-- 子页面Title Bar文字 字符超长情况下 -->
+    <style name="title_bar_style_long" parent="title_bar_style_parent">
+        <item name="android:textSize">16.7sp</item>
+        <item name="android:layout_marginTop">4dip</item>
+    </style>
+
+    <style name="common_text_account_setting">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="setting_font_style">
+        <item name="android:textColor">@color/setting_font_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="personal_center_font_style">
+        <item name="android:textColor">@color/color_common_title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="whats_up_font_style">
+        <item name="android:textColor">@color/setting_font_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="class_title_font_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="class_intro_font_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+
+    <style name="dialog_common" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="btn_custom_dialog_common_black" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button_black_belowtext_color</item>
+        <item name="android:textSize">@dimen/textsize_18sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="title_custom_dialog_common_black" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">20dip</item>
+        <item name="android:layout_marginLeft">16.67dip</item>
+        <!-- gordon 40px改为13.33 -->
+        <item name="android:layout_marginRight">16.67dip</item>
+        <!-- gordon 40px改为13.33 -->
+        <item name="android:layout_marginTop">20dip</item>
+        <item name="android:textColor">@color/button_black_belowtext_color</item>
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+        <item name="android:lineSpacingMultiplier">1.0</item>
+    </style>
+
+
+    <style name="item_main">
+        <item name="android:layout_width">83.33dp</item>
+        <item name="android:layout_height">96.67dp</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+        <item name="android:layout_marginRight">2dip</item>
+        <item name="android:layout_marginTop">2dip</item>
+    </style>
+
+
+    <style name="text_event_title">
+        <item name="android:textColor">@color/color_common_title</item>
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="text_event_time">
+        <item name="android:textColor">@color/color_common_date</item>
+        <item name="android:textSize">@dimen/textsize_12sp</item>
+    </style>
+
+    <style name="btn_common">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#2f88c4</item>
+    </style>
+
+    <style name="btn_task">
+        <item name="android:textColor">@color/white_1_fafafa</item>
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="forums_font_small_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="forums_font_middle_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="forums_font_content_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="forums_font_big_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="avatar_big">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="avatar_middle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+    <style name="avatar_little">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">55dp</item>
+    </style>
+    <style name="avatar_small">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="class_table_item">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+    <style name="my_class_table_item">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+    <style name="my_class_table">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <!-- Dialog -->
+    <style name="defined_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@drawable/bg_transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="task_photo">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+
+    <style name="item_main_icon">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="main_top">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="customDialog"></style>
+
+
+    <style name="class_circle_photo">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="class_circle_avatar">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="et_common">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+        <item name="android:paddingLeft">13.3dp</item>
+        <item name="android:paddingRight">13.3dp</item>
+        <item name="android:maxLength">12</item>
+    </style>
+
+    <!--对话框弹出和消失的动画-->
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+
+    <!-- 课表样式开始 -->
+    <style name="myActionBarTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/actionBarText</item>
+    </style>
+    <!-- 课表样结束 -->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>

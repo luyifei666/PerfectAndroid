@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/img_right_bt_tri"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/clickbg">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/labeltext"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:text="语文"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_16sp"/>
+
+
+        <com.haozhang.lib.SlantedTextView
+            android:id="@+id/labeltext"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:slantedLength="38dp"
+            app:slantedMode="right_bottom_triangle"
+            app:slantedText="未选择"
+            app:slantedTextColor="@color/white"
+            app:slantedTextSize="10sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

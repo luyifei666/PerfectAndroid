@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Perfect</string>
+    <string name="tip_network_error">网络异常，请检查网络。</string>
+    <string name="network_or_server_error">网络或服务器异常，请稍后再试</string>
+    <string name="gank_hint_copy_success">复制成功</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

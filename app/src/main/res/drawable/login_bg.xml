@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true"
+        android:drawable="@mipmap/et_select" /><!--选中时效果-->
+    <item android:state_focused="false"
+        android:drawable="@mipmap/et_normol" /><!--未选中时效果-->
+</selector>
